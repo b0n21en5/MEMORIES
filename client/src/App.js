@@ -18,25 +18,26 @@ const App = () =>{
     }, [dispatch]);
 
     return(
-        <div>
-            <Container maxidth="lg">
-                <AppBar className={classes.appBar} position="static" color="inherit">
-                    <Typography className={classes.heading} variant="h2" align="center">MEMORIES</Typography>
-                    <img src={memories} className={classes.image} alt="MEMORIES" height="60"/>
-                </AppBar>
-                <Grow in>
-                    <Grid container justifyContent="space-between" alignItems="stretch" spacing={4}>
+        <Container maxidth="lg">
+            <AppBar className={classes.appBar} position="static" color="inherit">
+                <Typography className={classes.heading} variant="h2" align="center">MEMORIES</Typography>
+                <img src={memories} className={classes.image} alt="MEMORIES" height="60"/>
+            </AppBar>
+            <Grow in>
+                <Container>
+                    <Grid container justifyContent="space-between" alignItems="stretch" spacing={3}>
                         <Grid item xs={12} sm={7}>
                             <Posts/>
                         </Grid>
-                        <Grid item xs={12} sm={7}>
+                        <Grid item xs={12} sm={4}>
                             <Form/>
                         </Grid>
-
                     </Grid>
-                </Grow>
-            </Container>
-        </div>
+
+                </Container>
+
+            </Grow>
+        </Container>
     );
 }
 
