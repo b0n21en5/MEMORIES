@@ -1,4 +1,5 @@
 # MEMORIES_PROJECT
+<p>Full stack MERN development project</p>
 
 
 ## Tech Stack 
